@@ -1,0 +1,201 @@
+PMBOK GUIDE - PROJECT MANAGEMENT FUNDAMENTALS
+
+=== PROJECT MANAGEMENT OVERVIEW ===
+
+Project management is the application of knowledge, skills, tools, and techniques to project activities to meet project requirements. A project is a temporary endeavor undertaken to create a unique product, service, or result.
+
+Key characteristics of projects:
+- Temporary in nature with a defined beginning and end
+- Create unique deliverables
+- Progressively elaborated as more information becomes available
+- Require resources that are often from various areas
+
+=== PROJECT LIFE CYCLE AND PHASES ===
+
+Projects typically progress through five process groups:
+
+1. Initiating Process Group
+- Defines and authorizes the project or phase
+- Develops project charter
+- Identifies stakeholders
+- Establishes initial scope
+
+2. Planning Process Group
+- Establishes scope, refines objectives, and develops course of action
+- Creates project management plan
+- Defines and sequences activities
+- Estimates resources and durations
+- Develops schedule and budget
+- Plans quality, communications, risk, and procurement
+
+3. Executing Process Group
+- Completes work defined in project management plan
+- Directs and manages project work
+- Manages stakeholder engagement
+- Performs quality assurance
+- Acquires and develops project team
+
+4. Monitoring and Controlling Process Group
+- Tracks, reviews, and regulates project progress and performance
+- Monitors and controls project work
+- Performs integrated change control
+- Validates and controls scope
+- Controls schedule, costs, quality, and risks
+
+5. Closing Process Group
+- Finalizes all activities to formally close the project or phase
+- Closes project or phase
+- Obtains final acceptance of deliverables
+- Documents lessons learned
+
+=== PROJECT MANAGEMENT KNOWLEDGE AREAS ===
+
+1. Integration Management
+- Developing project charter
+- Developing project management plan
+- Directing and managing project work
+- Managing project knowledge
+- Monitoring and controlling project work
+- Performing integrated change control
+- Closing the project or phase
+
+2. Scope Management
+- Planning scope management
+- Collecting requirements
+- Defining scope
+- Creating work breakdown structure (WBS)
+- Validating scope
+- Controlling scope
+
+3. Schedule Management
+- Planning schedule management
+- Defining activities
+- Sequencing activities
+- Estimating activity durations
+- Developing schedule
+- Controlling schedule
+
+4. Cost Management
+- Planning cost management
+- Estimating costs
+- Determining budget
+- Controlling costs
+
+5. Quality Management
+- Planning quality management
+- Managing quality
+- Controlling quality
+
+6. Resource Management
+- Planning resource management
+- Estimating activity resources
+- Acquiring resources
+- Developing team
+- Managing team
+- Controlling resources
+
+7. Communications Management
+- Planning communications management
+- Managing communications
+- Monitoring communications
+
+8. Risk Management
+- Planning risk management
+- Identifying risks
+- Performing qualitative risk analysis
+- Performing quantitative risk analysis
+- Planning risk responses
+- Implementing risk responses
+- Monitoring risks
+
+9. Procurement Management
+- Planning procurement management
+- Conducting procurements
+- Controlling procurements
+
+10. Stakeholder Management
+- Identifying stakeholders
+- Planning stakeholder engagement
+- Managing stakeholder engagement
+- Monitoring stakeholder engagement
+
+=== WORK BREAKDOWN STRUCTURE (WBS) ===
+
+The WBS is a hierarchical decomposition of the total scope of work to be carried out by the project team to accomplish the project objectives and create the required deliverables.
+
+WBS Best Practices:
+- Decompose work into manageable components
+- Each level represents increasingly detailed definitions of project work
+- Lowest level is called work package
+- Use 100% rule: WBS includes 100% of work defined by project scope
+- Deliverable-oriented grouping works best
+- Typically 3-4 levels deep for most projects
+
+=== PROJECT CHARTER ===
+
+The project charter is a document issued by the project initiator or sponsor that formally authorizes the existence of a project and provides the project manager with the authority to apply organizational resources to project activities.
+
+Key components:
+- Project purpose or justification
+- Measurable project objectives and success criteria
+- High-level requirements
+- High-level project description and boundaries
+- Overall project risk
+- Summary milestone schedule
+- Pre-approved financial resources
+- Key stakeholder list
+- Project approval requirements
+- Assigned project manager and authority level
+- Name and authority of sponsor or other person authorizing the project charter
+
+=== RISK MANAGEMENT ===
+
+Project risk is an uncertain event or condition that, if it occurs, has a positive or negative effect on one or more project objectives.
+
+Risk Management Process:
+1. Identify Risks - Determine which risks may affect the project
+2. Analyze Risks Qualitatively - Prioritize risks by probability and impact
+3. Analyze Risks Quantitatively - Numerically analyze the effect of identified risks
+4. Plan Risk Responses - Develop options and actions to enhance opportunities and reduce threats
+5. Monitor Risks - Track identified risks, monitor residual risks, identify new risks
+
+Risk Response Strategies:
+- For Threats: Avoid, Transfer, Mitigate, Accept
+- For Opportunities: Exploit, Share, Enhance, Accept
+
+=== STAKEHOLDER MANAGEMENT ===
+
+Stakeholders are individuals, groups, or organizations who may affect, be affected by, or perceive themselves to be affected by a decision, activity, or outcome of a project.
+
+Stakeholder Management includes:
+- Identifying all stakeholders
+- Analyzing stakeholder expectations and impact
+- Developing strategies to engage stakeholders
+- Managing stakeholder engagement throughout project lifecycle
+- Monitoring overall stakeholder relationships
+
+Stakeholder Analysis considers:
+- Interest in the project
+- Influence over the project
+- Level of involvement needed
+- Potential impact on project success
+
+=== CHANGE MANAGEMENT ===
+
+Change control is the process of identifying, documenting, approving or rejecting, and controlling changes to project baselines.
+
+Integrated Change Control Process:
+1. Change Request Submission
+2. Change Request Review
+3. Change Impact Analysis
+4. Change Approval/Rejection
+5. Change Implementation
+6. Change Verification
+7. Update Project Documents
+
+All change requests should be:
+- Documented in writing
+- Reviewed by change control board
+- Assessed for impact on scope, schedule, cost, quality, and risk
+- Approved before implementation
+- Tracked and communicated to stakeholders

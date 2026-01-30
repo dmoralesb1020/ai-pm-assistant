@@ -1,0 +1,345 @@
+SCRUM GUIDE - SCRUM FRAMEWORK
+
+=== SCRUM DEFINITION ===
+
+Scrum is a lightweight framework that helps people, teams and organizations generate value through adaptive solutions for complex problems.
+
+Scrum is:
+- Lightweight
+- Simple to understand
+- Difficult to master
+- Based on empiricism and lean thinking
+- Employs iterative, incremental approach
+
+Empiricism: Knowledge comes from experience and making decisions based on what is observed.
+
+Lean Thinking: Reduce waste and focus on the essentials.
+
+=== SCRUM THEORY ===
+
+Three Pillars of Empiricism:
+
+1. Transparency
+- Work must be visible to those performing it and those receiving it
+- Decisions based on perceived state of artifacts
+- Low transparency can lead to wasteful decisions
+
+2. Inspection
+- Scrum artifacts and progress must be inspected frequently
+- Detect undesirable variances
+- Inspection enables adaptation
+
+3. Adaptation
+- Adjust process or product if inspection reveals issues
+- Adapt as soon as possible to minimize further deviation
+
+=== SCRUM VALUES ===
+
+Five Scrum Values:
+
+1. Commitment
+- Commit to achieving team goals
+- Commit to supporting each other
+
+2. Focus
+- Focus on sprint work
+- Focus on moving toward goals
+
+3. Openness
+- Open about work and challenges
+- Transparency in communication
+
+4. Respect
+- Respect each other as capable, independent people
+- Respect different perspectives
+
+5. Courage
+- Courage to do the right thing
+- Courage to work on tough problems
+- Courage to make decisions
+
+=== SCRUM TEAM ===
+
+The Scrum Team consists of one Scrum Master, one Product Owner, and Developers.
+
+Scrum Team Characteristics:
+- Cross-functional: Skills necessary to create value each Sprint
+- Self-managing: Internally decide who does what, when, and how
+- Small enough to remain nimble (typically 10 or fewer people)
+- No sub-teams or hierarchies
+- Accountable for creating valuable Increment every Sprint
+
+Product Owner:
+
+Responsibilities:
+- Maximizing value of product
+- Managing product backlog:
+  * Developing and communicating Product Goal
+  * Creating and communicating Product Backlog items
+  * Ordering Product Backlog items
+  * Ensuring Product Backlog is transparent and understood
+
+Authority:
+- One person, not a committee
+- May delegate work but remains accountable
+- Decisions must be respected by organization
+- Can cancel Sprint if Sprint Goal becomes obsolete
+
+Scrum Master:
+
+Responsibilities:
+- Accountable for Scrum Team's effectiveness
+- Enabling team to improve practices within Scrum framework
+- True leader who serves the Scrum Team and larger organization
+
+Serves Product Owner:
+- Help find techniques for Product Goal definition
+- Help team understand need for clear Product Backlog items
+- Help establish empirical product planning
+- Facilitate stakeholder collaboration
+
+Serves Developers:
+- Coach in self-management and cross-functionality
+- Help team focus on high-value Increments
+- Remove impediments to progress
+- Ensure Scrum events are productive and kept within timebox
+
+Serves Organization:
+- Lead and coach in Scrum adoption
+- Plan and advise Scrum implementations
+- Help employees understand empirical approach
+- Remove barriers between stakeholders and Scrum Teams
+
+Developers:
+
+Responsibilities:
+- Create plan for Sprint (Sprint Backlog)
+- Instill quality by adhering to Definition of Done
+- Adapt plan each day toward Sprint Goal
+- Hold each other accountable as professionals
+
+Typical size: 3-9 people
+
+=== SCRUM EVENTS ===
+
+Sprint:
+
+- Fixed-length event (one month or less)
+- Container for all other events
+- New Sprint starts immediately after conclusion of previous Sprint
+- All work happens within Sprints
+- No changes made that endanger Sprint Goal
+- Quality does not decrease
+- Product Backlog refined as needed
+- Scope may be clarified and renegotiated with Product Owner
+
+Sprint Planning:
+
+Purpose: Lay out work for the Sprint
+Timebox: Maximum 8 hours for one-month Sprint (shorter for shorter Sprints)
+Attendees: Entire Scrum Team
+
+Topics Addressed:
+1. Why is this Sprint valuable? (Sprint Goal)
+2. What can be Done this Sprint? (Select from Product Backlog)
+3. How will chosen work get done? (Create plan in Sprint Backlog)
+
+Output: Sprint Backlog (Sprint Goal + selected items + plan for delivering them)
+
+Daily Scrum:
+
+Purpose: Inspect progress toward Sprint Goal and adapt Sprint Backlog
+Timebox: 15 minutes
+Frequency: Every working day of Sprint
+Attendees: Developers (Product Owner and Scrum Master participate if working on Sprint Backlog items)
+
+Benefits:
+- Improve communications
+- Identify impediments
+- Promote quick decision-making
+- Eliminate need for other meetings
+
+Sprint Review:
+
+Purpose: Inspect Sprint outcome and determine future adaptations
+Timebox: Maximum 4 hours for one-month Sprint
+Attendees: Scrum Team and key stakeholders
+Format: Working session, not presentation
+
+Activities:
+- Present completed work
+- Discuss what went well, problems encountered, how problems solved
+- Demonstrate work and answer questions
+- Review what has changed in environment
+- Collaborate on what to do next
+- Review timeline, budget, capabilities for next anticipated product release
+
+Output: Revised Product Backlog
+
+Sprint Retrospective:
+
+Purpose: Plan ways to increase quality and effectiveness
+Timebox: Maximum 3 hours for one-month Sprint
+Attendees: Scrum Team
+When: After Sprint Review, before next Sprint Planning
+
+Topics:
+- What went well during Sprint?
+- What problems did we encounter?
+- How were (or weren't) problems solved?
+- What will we commit to improve in next Sprint?
+
+Output: Identified improvements to implement in next Sprint
+
+=== SCRUM ARTIFACTS ===
+
+Product Backlog:
+
+- Emergent, ordered list of what's needed to improve product
+- Single source of work for Scrum Team
+- Items that can be Done within one Sprint are ready for selection in Sprint Planning
+- Refined through backlog refinement (decompose and further define items)
+- Commitment: Product Goal (future state of product)
+
+Product Backlog Item Attributes:
+- Description
+- Order
+- Estimate
+- Value
+
+Sprint Backlog:
+
+- Composed of Sprint Goal, selected Product Backlog items, and plan for delivering them
+- Highly visible, real-time picture of work Developers plan to accomplish during Sprint
+- Updated throughout Sprint as more is learned
+- Commitment: Sprint Goal
+
+Sprint Goal:
+- Single objective for Sprint
+- Creates coherence and focus
+- Created during Sprint Planning
+- Added to Sprint Backlog
+- Provides flexibility regarding exact work needed to achieve it
+
+Increment:
+
+- Concrete stepping stone toward Product Goal
+- Each Increment additive to all prior Increments
+- Multiple Increments may be created within Sprint
+- Sum of Increments presented at Sprint Review
+- Work cannot be considered part of Increment unless it meets Definition of Done
+- Commitment: Definition of Done
+
+Definition of Done:
+- Formal description of state of Increment when it meets quality measures
+- Moment Product Backlog item meets Definition of Done, an Increment is born
+- Creates transparency by providing everyone shared understanding of what work was completed
+- If item does not meet Definition of Done, it cannot be released or presented at Sprint Review
+
+=== SCRUM AT SCALE ===
+
+Scaling Scrum for Multiple Teams:
+
+Nexus Framework:
+- Extends Scrum to guide multiple teams working on single product
+- Adds Nexus Integration Team
+- Adds Nexus events that augment Sprint events
+- Maintains accountability and transparency
+
+Large-Scale Scrum (LeSS):
+- Scales Scrum by trying to stay within Scrum rules
+- One Product Owner for all teams
+- One Product Backlog for all teams
+- One potentially shippable product Increment
+
+Scrum of Scrums:
+- Coordination mechanism for multiple Scrum teams
+- Representatives from each team meet regularly
+- Discuss dependencies, integration issues, and cross-team impediments
+
+=== COMMON SCRUM ANTI-PATTERNS ===
+
+Sprint Planning Anti-Patterns:
+- Product Owner not available or prepared
+- Team overcommits habitually
+- Not creating Sprint Goal
+- Sprint Planning takes entire day
+
+Daily Scrum Anti-Patterns:
+- Becomes status report to Scrum Master or Product Owner
+- Exceeds timebox regularly
+- Problem-solving during Daily Scrum
+- Team members absent frequently
+
+Sprint Review Anti-Patterns:
+- Becomes formal presentation with slides
+- No stakeholder attendance
+- Demo of incomplete work
+- No discussion of what to do next
+
+Sprint Retrospective Anti-Patterns:
+- Skipped when "nothing went wrong"
+- Same issues raised repeatedly with no action
+- No psychological safety to raise issues
+- Scrum Master dominates conversation
+
+=== SCRUM SUCCESS METRICS ===
+
+Product Metrics:
+- Customer satisfaction
+- Product usage
+- Feature adoption rate
+- Revenue generated
+- Customer retention
+
+Team Metrics:
+- Sprint Goal success rate
+- Velocity (trend over time)
+- Sprint Burndown
+- Team happiness
+- Definition of Done compliance
+
+Process Metrics:
+- Cycle time
+- Lead time  
+- Defect rate
+- Technical debt
+- Time to market
+
+=== KEY SCRUM TERMS ===
+
+Backlog Refinement: Adding detail, estimates, and order to Product Backlog items
+
+Burn-down Chart: Graph showing work remaining versus time
+
+Burn-up Chart: Graph showing work completed versus time
+
+Capacity: Amount of work team can handle in Sprint
+
+Done: Shared understanding of what it means for work to be complete
+
+Epic: Large user story that needs to be broken down
+
+Forecast: Selection of items from Product Backlog team predicts will complete in Sprint
+
+Impediment: Anything preventing team from performing work efficiently
+
+Increment: Sum of all Product Backlog items completed during Sprint plus value of increments of all previous Sprints
+
+Product Backlog Item (PBI): Item in Product Backlog
+
+Ready: Shared understanding of what it means for Product Backlog item to be ready for Sprint
+
+Sprint Zero: Initial Sprint focused on setup rather than delivering increment (not recommended in pure Scrum)
+
+Story Points: Unit of measure for relative sizing of Product Backlog items
+
+Technical Debt: Implied cost of additional rework caused by choosing easy solution now instead of better approach
+
+Time-box: Maximum amount of time allotted for an activity or event
+
+User Story: Short description of feature from user perspective
+
+Velocity: Amount of Product Backlog turned into Increment during Sprint
+
+Working Agreement: Team-created guidelines for how members work together

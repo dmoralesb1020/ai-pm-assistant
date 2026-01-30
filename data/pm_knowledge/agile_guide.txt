@@ -1,0 +1,264 @@
+AGILE PRACTICE GUIDE - AGILE METHODOLOGIES
+
+=== AGILE MINDSET AND VALUES ===
+
+The Agile Manifesto values:
+- Individuals and interactions over processes and tools
+- Working software over comprehensive documentation
+- Customer collaboration over contract negotiation
+- Responding to change over following a plan
+
+While there is value in the items on the right, Agile values the items on the left more.
+
+Agile Principles:
+1. Satisfy the customer through early and continuous delivery of valuable software
+2. Welcome changing requirements, even late in development
+3. Deliver working software frequently, with preference to shorter timescale
+4. Business people and developers must work together daily
+5. Build projects around motivated individuals and trust them
+6. Face-to-face conversation is most efficient method of conveying information
+7. Working software is the primary measure of progress
+8. Agile processes promote sustainable development
+9. Continuous attention to technical excellence and good design
+10. Simplicity - the art of maximizing work not done - is essential
+11. Best architectures, requirements, and designs emerge from self-organizing teams
+12. Team reflects on how to become more effective and adjusts accordingly
+
+=== AGILE FRAMEWORKS AND APPROACHES ===
+
+Common Agile Frameworks:
+
+1. Scrum
+- Most widely used Agile framework
+- Works in time-boxed iterations called Sprints
+- Defined roles: Product Owner, Scrum Master, Development Team
+- Ceremonies: Sprint Planning, Daily Standup, Sprint Review, Sprint Retrospective
+
+2. Kanban
+- Visualize workflow
+- Limit work in progress (WIP)
+- Manage flow
+- Make process policies explicit
+- Implement feedback loops
+- Improve collaboratively
+
+3. Extreme Programming (XP)
+- Pair programming
+- Test-driven development
+- Continuous integration
+- Refactoring
+- Simple design
+
+4. Lean
+- Eliminate waste
+- Build quality in
+- Create knowledge
+- Defer commitment
+- Deliver fast
+- Respect people
+- Optimize the whole
+
+=== AGILE PLANNING ===
+
+Agile Planning Levels:
+
+1. Product Vision and Roadmap
+- Long-term strategic direction
+- High-level features and capabilities
+- Release planning with target dates
+
+2. Release Planning
+- Features and stories for upcoming releases
+- Typically 3-6 month timeframe
+- Prioritized product backlog
+
+3. Iteration/Sprint Planning
+- Detailed planning for upcoming iteration
+- Task breakdown and estimation
+- Commitment to iteration goals
+
+4. Daily Planning
+- Daily standup meetings
+- Task assignments and adjustments
+- Immediate impediment removal
+
+=== USER STORIES ===
+
+User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability.
+
+User Story Format:
+"As a [type of user], I want [goal] so that [benefit/value]"
+
+Example:
+"As a project manager, I want to generate status reports automatically so that I can save 2 hours per week"
+
+INVEST Criteria for Good User Stories:
+- Independent: Can be developed in any order
+- Negotiable: Details can be discussed
+- Valuable: Delivers value to users
+- Estimable: Can estimate effort required
+- Small: Can be completed in one iteration
+- Testable: Clear acceptance criteria
+
+Acceptance Criteria:
+- Specific conditions that must be met for story to be considered complete
+- Written in Given-When-Then format
+- Example: "Given I am logged in, When I click 'Generate Report', Then a PDF report is created"
+
+=== ESTIMATION TECHNIQUES ===
+
+1. Story Points
+- Relative sizing technique
+- Based on complexity, effort, and uncertainty
+- Common scales: Fibonacci (1, 2, 3, 5, 8, 13, 21)
+- Not tied to hours or days
+
+2. Planning Poker
+- Team-based estimation technique
+- Each member estimates independently
+- Discuss differences and converge on estimate
+- Promotes team discussion and shared understanding
+
+3. T-Shirt Sizing
+- High-level estimation (XS, S, M, L, XL)
+- Quick and simple
+- Good for initial backlog grooming
+
+=== SPRINT/ITERATION EXECUTION ===
+
+Typical Sprint Flow (2-week example):
+
+Day 1: Sprint Planning
+- Review and refine user stories
+- Team commits to sprint goal
+- Break stories into tasks
+- Estimate tasks
+
+Days 2-9: Development
+- Daily standup (15 minutes)
+  * What did I do yesterday?
+  * What will I do today?
+  * Any impediments?
+- Continuous development and testing
+- Update task board daily
+
+Day 10: Sprint Review/Demo
+- Demonstrate completed work to stakeholders
+- Gather feedback
+- Update product backlog based on feedback
+
+Day 10: Sprint Retrospective
+- What went well?
+- What didn't go well?
+- What should we improve?
+- Create action items for next sprint
+
+=== AGILE METRICS ===
+
+Key Metrics:
+
+1. Velocity
+- Amount of work completed per iteration
+- Measured in story points
+- Used for forecasting future capacity
+- Track as rolling average over 3-5 sprints
+
+2. Burndown Chart
+- Visual representation of work remaining
+- Updated daily
+- Shows if team is on track to complete sprint
+
+3. Cumulative Flow Diagram
+- Shows work in different states over time
+- Identifies bottlenecks
+- Visualizes WIP
+
+4. Cycle Time
+- Time from work starting to completion
+- Helps identify process inefficiencies
+- Lower is generally better
+
+5. Lead Time
+- Time from request to delivery
+- Customer-facing metric
+- Includes wait time before work starts
+
+=== DEFINITION OF DONE (DOD) ===
+
+Definition of Done is a shared understanding of what it means for work to be complete.
+
+Typical DoD Checklist:
+- Code written and peer reviewed
+- Unit tests written and passing
+- Integration tests passing
+- Documentation updated
+- Acceptance criteria met
+- Product Owner approved
+- Deployed to staging environment
+- No critical bugs
+
+Benefits:
+- Ensures quality
+- Creates transparency
+- Prevents incomplete work from accumulating
+- Establishes team accountability
+
+=== AGILE ANTI-PATTERNS ===
+
+Common mistakes to avoid:
+
+1. Agile in Name Only
+- Following Agile ceremonies without embracing values
+- No real empowerment or collaboration
+
+2. No Product Owner Engagement
+- Product Owner unavailable or not engaged
+- Lack of clear priorities
+- Team makes product decisions without guidance
+
+3. Skipping Retrospectives
+- Missing opportunities for continuous improvement
+- Repeating same mistakes
+
+4. Overcommitting
+- Taking on more work than capacity allows
+- Leads to incomplete sprints and technical debt
+
+5. No Definition of Done
+- Unclear completion criteria
+- Accumulating technical debt
+- Quality issues
+
+6. Ignoring Technical Debt
+- Focus only on new features
+- Quality degrades over time
+- Velocity decreases
+
+=== TRANSITIONING TO AGILE ===
+
+Steps for Successful Transition:
+
+1. Assess Current State
+- Document current processes
+- Identify pain points
+- Understand organizational culture
+
+2. Build Agile Knowledge
+- Training for all team members
+- Understand Agile values and principles
+- Learn specific framework (Scrum, Kanban, etc.)
+
+3. Start Small
+- Pilot with one team
+- Learn and adapt
+- Demonstrate value
+
+4. Create Supporting Environment
+- Remove impediments
+- Provide necessary tools
+- Foster collaborative culture
+
+5. Scale Gradually
+- Expand to more teams
+- Maintain consistency
+- Continue learning and adapting
