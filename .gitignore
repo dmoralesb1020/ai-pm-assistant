@@ -235,3 +235,7 @@ Thumbs.db
 # Logs
 logs/
 *.log
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/*_cache/
