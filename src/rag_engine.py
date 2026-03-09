@@ -22,37 +22,37 @@ class RAGEngine:
     """
     
     def __init__(self, collection_name: str = "pm_knowledge"):
-    """
-    Initialize RAG engine
-    
-    Args:
-        collection_name: Name of the ChromaDB collection
-    """
-    self.config = get_config()
-    self.collection_name = collection_name
-    
-    # Initialize ChromaDB client with minimal config
-    try:
-        self.client = chromadb.PersistentClient(
-            path=self.config.VECTOR_STORE_PATH
+        """
+        Initialize RAG engine
+        
+        Args:
+            collection_name: Name of the ChromaDB collection
+        """
+        self.config = get_config()
+        self.collection_name = collection_name
+        
+        # Initialize ChromaDB client with minimal config
+        try:
+            self.client = chromadb.PersistentClient(
+                path=self.config.VECTOR_STORE_PATH
+            )
+            logger.info(f"ChromaDB client initialized at {self.config.VECTOR_STORE_PATH}")
+        except Exception as e:
+            logger.error(f"Failed to initialize ChromaDB: {e}")
+            # Fallback to in-memory client for cloud environments
+            logger.info("Falling back to in-memory ChromaDB client")
+            self.client = chromadb.Client()
+        
+        # Initialize embedding function (OpenAI embeddings)
+        self.embedding_function = embedding_functions.OpenAIEmbeddingFunction(
+            api_key=self.config.OPENAI_API_KEY,
+            model_name=self.config.EMBEDDING_MODEL
         )
-        logger.info(f"ChromaDB client initialized at {self.config.VECTOR_STORE_PATH}")
-    except Exception as e:
-        logger.error(f"Failed to initialize ChromaDB: {e}")
-        # Fallback to in-memory client for cloud environments
-        logger.info("Falling back to in-memory ChromaDB client")
-        self.client = chromadb.Client()
-    
-    # Initialize embedding function (OpenAI embeddings)
-    self.embedding_function = embedding_functions.OpenAIEmbeddingFunction(
-        api_key=self.config.OPENAI_API_KEY,
-        model_name=self.config.EMBEDDING_MODEL
-    )
-    
-    # Get or create collection
-    self.collection = self._get_or_create_collection()
-    
-    logger.info(f"RAG Engine initialized with collection: {collection_name}")
+        
+        # Get or create collection
+        self.collection = self._get_or_create_collection()
+        
+        logger.info(f"RAG Engine initialized with collection: {collection_name}")
     
     def _get_or_create_collection(self):
         """Get existing collection or create new one"""
