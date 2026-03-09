@@ -23,7 +23,7 @@ class RAGEngine:
     
     def __init__(self, collection_name: str = "pm_knowledge"):
         """
-        Initialize RAG engine
+        Initialize RAG engine with in-memory ChromaDB
         
         Args:
             collection_name: Name of the ChromaDB collection
@@ -31,17 +31,9 @@ class RAGEngine:
         self.config = get_config()
         self.collection_name = collection_name
         
-        # Initialize ChromaDB client with minimal config
-        try:
-            self.client = chromadb.PersistentClient(
-                path=self.config.VECTOR_STORE_PATH
-            )
-            logger.info(f"ChromaDB client initialized at {self.config.VECTOR_STORE_PATH}")
-        except Exception as e:
-            logger.error(f"Failed to initialize ChromaDB: {e}")
-            # Fallback to in-memory client for cloud environments
-            logger.info("Falling back to in-memory ChromaDB client")
-            self.client = chromadb.Client()
+        # Use in-memory client (works on all platforms)
+        logger.info("Initializing in-memory ChromaDB client")
+        self.client = chromadb.Client()
         
         # Initialize embedding function (OpenAI embeddings)
         self.embedding_function = embedding_functions.OpenAIEmbeddingFunction(
@@ -296,17 +288,25 @@ class RAGEngine:
         """
         count = self.collection.count()
         
-        # Get sample to show sources
         if count > 0:
-            sample = self.collection.get(limit=min(count, 10))
-            sources = set(m['source'] for m in sample['metadatas'])
+            # Get ALL items to accurately find all sources
+            all_items = self.collection.get()
+            sources = set(m['source'] for m in all_items['metadatas'])
+            
+            # Count chunks per source
+            source_counts = {}
+            for m in all_items['metadatas']:
+                source = m['source']
+                source_counts[source] = source_counts.get(source, 0) + 1
         else:
             sources = set()
+            source_counts = {}
         
         return {
             'collection_name': self.collection_name,
             'total_chunks': count,
-            'sources': list(sources),
+            'sources': sorted(list(sources)),
+            'chunks_per_source': source_counts,
             'embedding_model': self.config.EMBEDDING_MODEL
         }
     
