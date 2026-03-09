@@ -4,8 +4,8 @@ langchain==0.1.9
 langchain-openai==0.0.5
 langchain-community==0.0.21
 
-# Vector Database
-chromadb==0.4.24
+# Vector Database - Use older stable version
+chromadb==0.4.18
 sentence-transformers==2.3.1
 
 # Frontend
@@ -13,4 +13,8 @@ streamlit==1.31.0
 
 # Utilities
 python-dotenv==1.0.1
-tiktoken==0.5.2
+
+# tiktoken - Use pre-built wheels version
+tiktoken>=0.5.0,<0.6.0
+
+# Don't explicitly require Pillow - it comes with dependencies
