@@ -14,8 +14,3 @@ streamlit==1.31.0
 # Utilities
 python-dotenv==1.0.1
 tiktoken==0.5.2
-
-# Development
-pytest>=8.0.0
-black>=24.1.1
-flake8>=7.0.0
