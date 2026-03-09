@@ -34,11 +34,7 @@ class RAGEngine:
         
         # Initialize ChromaDB client
         self.client = chromadb.PersistentClient(
-            path=self.config.VECTOR_STORE_PATH,
-            settings=Settings(
-                anonymized_telemetry=False,
-                allow_reset=True
-            )
+            path=self.config.VECTOR_STORE_PATH
         )
         
         # Initialize embedding function (OpenAI embeddings)
