@@ -13,6 +13,52 @@ import traceback
 
 from src.features import PMAssistant
 
+import hmac
+import streamlit as st
+
+def check_password():
+    """Returns `True` if the user has entered the correct password."""
+    
+    def password_entered():
+        """Checks whether a password entered by the user is correct."""
+        if hmac.compare_digest(st.session_state["password"], st.secrets.get("APP_PASSWORD", "D3m02026!")):
+            st.session_state["password_correct"] = True
+            del st.session_state["password"]  
+        else:
+            st.session_state["password_correct"] = False
+
+    # Return True if password is correct
+    if st.session_state.get("password_correct", False):
+        return True
+
+    # Show password input
+    st.markdown("# 🔒 AI PM Assistant - Access Required")
+    st.markdown("""
+    This application is a portfolio demonstration project. 
+    
+    **For recruiters and interviewers:** Please contact me for access.
+    
+    - 📧 Email: moralesb.diego@gmail.com
+    """)
+    
+    st.text_input(
+        "🔑 Enter password to continue:", 
+        type="password", 
+        on_change=password_entered, 
+        key="password",
+        help="Contact the developer for access credentials"
+    )
+    
+    if "password_correct" in st.session_state and not st.session_state["password_correct"]:
+        st.error("😕 Incorrect password. Please contact the developer for access.")
+    
+    return False
+
+# Check password before loading the app
+if not check_password():
+    st.stop()
+
+
 # =============================================================================
 # PAGE CONFIGURATION
 # =============================================================================
