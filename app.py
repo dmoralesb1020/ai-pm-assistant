@@ -20,12 +20,17 @@ def check_password():
     """Returns `True` if the user has entered the correct password."""
     
     def password_entered():
-        """Checks whether a password entered by the user is correct."""
-        if hmac.compare_digest(st.session_state["password"], st.secrets.get("APP_PASSWORD", "D3m02026!")):
-            st.session_state["password_correct"] = True
-            del st.session_state["password"]  
-        else:
-            st.session_state["password_correct"] = False
+    """Checks whether a password entered by the user is correct."""
+    try:
+        correct_password = st.secrets["APP_PASSWORD"]
+    except (KeyError, FileNotFoundError):
+        correct_password = "demo2024"  # Fallback if secret not found
+    
+    if hmac.compare_digest(st.session_state["password"], correct_password):
+        st.session_state["password_correct"] = True
+        del st.session_state["password"]
+    else:
+        st.session_state["password_correct"] = False
 
     # Return True if password is correct
     if st.session_state.get("password_correct", False):
